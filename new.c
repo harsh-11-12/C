@@ -1,27 +1,28 @@
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
 #include <stdio.h>
 
-int main()
-{
+int main() {
+    int n = 5;
 
-    // printf("Hello Wrld!");
-    // return 0;
+    for(int i = 1; i <= 5; i++){
 
-    // int a; //variable declaration
-    // a=20;  //variable initialiation
-    // printf("The output is:%d",a);
-    // return 0;
-
-    // printf("Size of int: %zu bytes\n", sizeof(int));
-    // printf("Size of float: %zu bytes\n", sizeof(float));
-    // printf("Size of char: %zu bytes\n", sizeof(char));
-    // return 0;
-
-    // int a;
-    // scanf("%d", &a);
-    // printf("The value of a is %d" a);
-    // return 0;
-
-    int a;
+        // For printing n - 1 spaces Before Stars itteration
+        for(int j = 1; j <= n - i; j++){
+            printf(" ");
+        }
+        
+        // For printing stars 
+        for (int k = 1; k <= i; k++){
+            printf("*");
+        }
+        
+        printf("\n");
+    }
 
     return 0;
 }
